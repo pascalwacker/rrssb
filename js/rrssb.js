@@ -67,6 +67,7 @@
 			$(this).find('.rrssb-pinterest a').attr('href', 'http://pinterest.com/pin/create/button/?url=' + settings.url + ((settings.image !== undefined) ? '&amp;media=' + settings.image : '') + (settings.description !== undefined ? '&description=' + settings.description : ''));
 			$(this).find('.rrssb-pocket a').attr('href', 'https://getpocket.com/save?url=' + settings.url);
 			$(this).find('.rrssb-github a').attr('href', settings.url);
+			$(this).find('.rrssb-telegram a').attr('href', 'https://telegram.me/share?url=' + settings.url + (settings.title !== undefined ? '&text=' + settings.title : ''));
 		}
 
 		if (settings.emailAddress !== undefined || settings.emailSubject) {
